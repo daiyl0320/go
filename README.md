@@ -1,2 +1,2 @@
 # go
-A repository to practice to write Go.
+A repository for practicing writing Go.
