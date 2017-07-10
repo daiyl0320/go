@@ -5,16 +5,16 @@ import "framework"
 import "math"
 import "util"
 
-type obj struct {
+type cc struct {
 }
 
-var e obj
+var e cc
 
-func (e *obj) Id() string {
+func (e *cc) Id() string {
 	return "CoinChange"
 }
 
-func (e *obj) Description() string {
+func (e *cc) Description() string {
 	return "Example link: https://leetcode.com/problems/coin-change/"
 }
 
@@ -22,7 +22,7 @@ func init() {
 	framework.Register(&e)
 }
 
-func (e *obj) Run() {
+func (e *cc) Run() {
 	coins := []int{1, 2, 5}
 	fmt.Println(coinChange(coins, 3))
 	fmt.Println(coinChange(coins, 11))
