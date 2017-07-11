@@ -9,7 +9,7 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 BUILD_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
 
 # Setup the environment for the build
-export GOPATH=$GOPATH:$BUILD_DIR
+export GOPATH=$GOPATH:`pwd`
 
 # Build the project
 cd $BUILD_DIR

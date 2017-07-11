@@ -8,6 +8,11 @@ type Runnable interface {
 	Run()
 }
 
+type Object struct {
+	Id          string
+	Description string
+}
+
 type store struct {
 	mStore map[string]Runnable
 	sync.Mutex

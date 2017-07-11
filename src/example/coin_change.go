@@ -6,16 +6,17 @@ import "math"
 import "util"
 
 type cc struct {
+	obj framework.Object
 }
 
-var e cc
+var e = cc{framework.Object{"CoinChange", "Example link: https://leetcode.com/problems/coin-change/"}}
 
 func (e *cc) Id() string {
-	return "CoinChange"
+	return e.obj.Id
 }
 
 func (e *cc) Description() string {
-	return "Example link: https://leetcode.com/problems/coin-change/"
+	return e.obj.Description
 }
 
 func init() {
