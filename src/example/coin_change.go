@@ -9,21 +9,21 @@ type cc struct {
 	obj framework.Object
 }
 
-var e = cc{framework.Object{"CoinChange", "Example link: https://leetcode.com/problems/coin-change/"}}
+var cc1 = cc{framework.Object{"CoinChange", "Example link: https://leetcode.com/problems/coin-change/"}}
 
-func (e *cc) Id() string {
-	return e.obj.Id
+func (cc1 *cc) Id() string {
+	return cc1.obj.Id
 }
 
-func (e *cc) Description() string {
-	return e.obj.Description
+func (cc1 *cc) Description() string {
+	return cc1.obj.Description
 }
 
 func init() {
-	framework.Register(&e)
+	framework.Register(&cc1)
 }
 
-func (e *cc) Run() {
+func (cc1 *cc) Run() {
 	coins := []int{1, 2, 5}
 	fmt.Println(coinChange(coins, 3))
 	fmt.Println(coinChange(coins, 11))
