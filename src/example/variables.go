@@ -25,6 +25,9 @@ var GInitialBool bool = true
 var GUninitialString string
 var GInitialString string = "test2"
 
+const gString = "test3"
+const GString = "test4"
+
 func (v1 *v) Id() string {
 	return v1.obj.Id
 }
@@ -52,6 +55,7 @@ func (v1 *v) Run() {
 		gInitialInt, gInitialBool, gInitialString)
 	fmt.Printf("GInitialInt= %v, GInitialBool= %v, GInitialString= %v\n",
 		GInitialInt, GInitialBool, GInitialString)
+	fmt.Printf("gString= %v, GString= %v\n", gString, GString)
 	// declare variable in if statement can just be ":="
 	if k := true; k {
 		// k can just visiable in if-else statement
