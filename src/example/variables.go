@@ -66,4 +66,14 @@ func (v1 *v) Run() {
 	// this block can not see k, so we can define another k again
 	k := false
 	fmt.Printf("k` = %v\n", k)
+
+	// rune
+	var chinese1 = "你好"
+	fmt.Printf("中文字：%v\n", chinese1)
+
+	chinese2 := "再见"
+	fmt.Printf("中文字：%v\n", chinese2)
+
+	var chinese3 = []rune{'你', '好'}
+	fmt.Printf("中文字：%v\n", chinese3)
 }
